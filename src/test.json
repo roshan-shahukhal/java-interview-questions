@@ -1,0 +1,142 @@
+{
+	"data": {
+		"jobId": "561995"
+	},
+	"meta": {
+		"queryProfiler": [
+			{
+				"id": "045199A2C49F1DB7588065AB58B3C78B",
+				"hostName": "nvmiscmsvcgq01",
+				"requestURL": "https://backend_hosts_7020/mi/qm/sc699",
+				"profiles": [
+					{
+						"duration": 3,
+						"time": "09/18/2019 13:52:08.705",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "com.vh.dashboard.dataprovider.dao.ColumnsDao.findAllByFormIdOrderByLabelAsc(MX_QM_SC699)"
+					},
+					{
+						"duration": 1,
+						"time": "09/18/2019 13:52:08.706",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "com.vh.dashboard.dataprovider.dao.ColumnsAppDao.findAllByFormIdAndAppId(MX_QM_SC699,971-003)"
+					},
+					{
+						"duration": 2,
+						"time": "09/18/2019 13:52:08.708",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "com.vh.dashboard.dataprovider.dao.ColumnsDao.findAllByFormIdAndActiveTrueOrderByLabelAsc(MX_QM_SC699)"
+					},
+					{
+						"duration": 35,
+						"time": "09/18/2019 13:52:08.746",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "SELECT a.reportid, a.reportname, a.reportstatexml, a.sqlquery, a.created_date, a.updated_date, a.owneruserid, b.username, a.cohorttype, a.appid, a.memlstid, a.predefined_yn, Upper(a.source) as source, a.public_yn FROM usr_str_cohorts a JOIN usr_users b ON a.owneruserid = b.userid  WHERE a.appid = '971-003' AND status = 'A' AND reportid = 61634 AND (a.owneruserid = '117495' OR a.public_yn = 'Y' OR (UPPER(a.source) = 'STRATIFIER' AND a.cohorttype='D'))"
+					},
+					{
+						"duration": 65,
+						"time": "09/18/2019 13:52:08.811",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "SELECT keylevel, nlvlid FROM usr_str_levelinfo where reportid = 61634"
+					},
+					{
+						"duration": 56,
+						"time": "09/18/2019 13:52:08.867",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "SELECT LVLID FROM usr_str_levelInfo WHERE REPORTID = '61634' AND KEYLEVEL = 1"
+					},
+					{
+						"duration": 2367,
+						"time": "09/18/2019 13:52:11.234",
+						"dataSource": "VERTICAQAVIP3.D2HAWKEYE.NET->S0971003_B",
+						"query": " SELECT  b.nLvl1Id nlvlid, b.lvl1Id lvlid, b.lvl1desc lvldesc FROM co_lvl1 b WHERE LVL1ID IN( 'NULL' )"
+					},
+					{
+						"duration": 51,
+						"time": "09/18/2019 13:52:11.285",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "SELECT LVLID FROM usr_str_levelInfo WHERE REPORTID = '61634' AND KEYLEVEL = 2"
+					},
+					{
+						"duration": 16,
+						"time": "09/18/2019 13:52:11.301",
+						"dataSource": "VERTICAQAVIP3.D2HAWKEYE.NET->S0971003_B",
+						"query": " SELECT  b.nLvl2Id nlvlid, b.lvl2Id lvlid, b.lvl2desc lvldesc FROM co_lvl2 b WHERE LVL2ID IN( 'NULL' )"
+					},
+					{
+						"duration": 54,
+						"time": "09/18/2019 13:52:11.355",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "SELECT LVLID FROM usr_str_levelInfo WHERE REPORTID = '61634' AND KEYLEVEL = 3"
+					},
+					{
+						"duration": 24,
+						"time": "09/18/2019 13:52:11.379",
+						"dataSource": "VERTICAQAVIP3.D2HAWKEYE.NET->S0971003_B",
+						"query": " SELECT  b.nLvl3Id nlvlid, b.lvl3Id lvlid, b.lvl3desc lvldesc FROM co_lvl3 b WHERE LVL3ID IN( 'FP' )"
+					},
+					{
+						"duration": 64,
+						"time": "09/18/2019 13:52:11.443",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "SELECT LVLID FROM usr_str_levelInfo WHERE REPORTID = '61634' AND KEYLEVEL = 4"
+					},
+					{
+						"duration": 12,
+						"time": "09/18/2019 13:52:11.455",
+						"dataSource": "VERTICAQAVIP3.D2HAWKEYE.NET->S0971003_B",
+						"query": " SELECT  b.nLvl4Id nlvlid, b.lvl4Id lvlid, b.lvl4desc lvldesc FROM co_lvl4 b WHERE LVL4ID IN( 'NULL' )"
+					},
+					{
+						"duration": 61,
+						"time": "09/18/2019 13:52:11.516",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "SELECT LVLID FROM usr_str_levelInfo WHERE REPORTID = '61634' AND KEYLEVEL = 5"
+					},
+					{
+						"duration": 13,
+						"time": "09/18/2019 13:52:11.529",
+						"dataSource": "VERTICAQAVIP3.D2HAWKEYE.NET->S0971003_B",
+						"query": " SELECT  b.nLvl5Id nlvlid, b.lvl5Id lvlid, b.lvl5desc lvldesc FROM co_lvl5 b WHERE LVL5ID IN( 'NULL' )"
+					},
+					{
+						"duration": 68,
+						"time": "09/18/2019 13:52:11.597",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "SELECT LVLID FROM usr_str_levelInfo WHERE REPORTID = '61634' AND KEYLEVEL = 6"
+					},
+					{
+						"duration": 12,
+						"time": "09/18/2019 13:52:11.609",
+						"dataSource": "VERTICAQAVIP3.D2HAWKEYE.NET->S0971003_B",
+						"query": " SELECT  b.nLvl6Id nlvlid, b.lvl6Id lvlid, b.lvl6desc lvldesc FROM co_lvl6 b WHERE LVL6ID IN( 'NULL' )"
+					},
+					{
+						"duration": 1,
+						"time": "09/18/2019 13:52:11.613",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "SELECT sq_usr_cs_report.NEXTVAL FROM dual"
+					},
+					{
+						"duration": 1,
+						"time": "09/18/2019 13:52:11.615",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": " SELECT resourceid AS defaultID \t, defaultValue FROM USR_Resources r \t,usr_apps u \t,usr_products p WHERE r.productlineid = p.productlineid \tAND u.apptype = p.productlinename \tAND u.appid = '971-003'  \tAND UPPER(r.RESOURCEID) IN ('#','DOMAIN','DESCRIPTION (FLAG)','MEASUREMENT TYPE','ELIGIBLE POPULATION','FLAGGED','FLAGGED RATE')  ORDER BY r.RESOURCEID ASC "
+					},
+					{
+						"duration": 1,
+						"time": "09/18/2019 13:52:11.617",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": " SELECT resourceid AS defaultID \t, defaultValue FROM USR_Resources r \t,usr_apps u \t,usr_products p WHERE r.productlineid = p.productlineid \tAND u.apptype = p.productlinename \tAND u.appid = '971-003'  \tAND UPPER(r.RESOURCEID) IN ('LVL1ID','LVL2ID','LVL3ID','LVL4ID','LVL5ID','LVL6ID')    AND UPPER(r.RESOURCETYPE) = 'LABEL'  ORDER BY r.RESOURCEID ASC "
+					},
+					{
+						"duration": 126,
+						"time": "09/18/2019 13:52:11.752",
+						"dataSource": "MDHawkeye->HawkeyeUser",
+						"query": "INSERT INTO usr_cs_report  ( REPORTID, APPID, USERID, REPORTNAME, SQLQUERY, SELECTFIELDS, WHERECONDITION, EXTRACTDELIMETER, METADATA )  VALUES (56943, '971-003', '117495', 'MX_QM_SC699_20190918135211', ' SELECT  count(1) over() recordCount,  e.Measure_id AS measureid,e.Domain AS issuename, e.Measure_abbr AS hedistype, e.Measure_desc AS question, e.isMeasure AS probcond, e.metrics_type AS measurementtype,e.measure_steward AS measuresteward,e.metrics_type AS metricstype,  e.ishybrid AS hybrid, NVL(a.PanelWithIssue,0) eligibilitypopulation, NVL(a.PanelMeetingCriteria,0) AS panelmeetingcriteria,  NVL(a.PanelNotMeetingCriteria,0) AS panelnotmeetingcriteria, CASE e.metrics_type  WHEN ''Percentage'' THEN CASE WHEN Nvl( a.panelwithissue , 0) = 0 THEN 0 ELSE( CASE WHEN e.ISINVERTRATE = ''Y'' THEN ROUND( 100 *( 1 -( a.panelmeetingcriteria / a.panelwithissue ) ) ,2 )  ELSE ROUND( 100* a.panelmeetingcriteria / a.panelwithissue ,2 )  END) END  WHEN ''Rate Per 1,000'' THEN CASE WHEN Nvl( a.panelwithissue , 0) = 0 THEN 0 ELSE( CASE WHEN e.ISINVERTRATE = ''Y'' THEN ROUND( 1000 *( 1 -( a.panelmeetingcriteria / a.panelwithissue ) ) ,2 )  ELSE ROUND( 1000* a.panelmeetingcriteria / a.panelwithissue ,2 )  END) END  WHEN ''Rate Per 100,000'' THEN CASE WHEN Nvl( a.panelwithissue , 0) = 0 THEN 0 ELSE( CASE WHEN e.ISINVERTRATE = ''Y'' THEN ROUND( 100000 *( 1 -( a.panelmeetingcriteria / a.panelwithissue ) ) ,2 )  ELSE ROUND( 100000* a.panelmeetingcriteria / a.panelwithissue ,2 )  END) END  WHEN ''Rate'' THEN CASE WHEN Nvl( a.panelwithissue , 0) = 0 THEN 0 ELSE( CASE WHEN e.ISINVERTRATE = ''Y'' THEN ROUND( 1 *( 1 -( a.panelmeetingcriteria / a.panelwithissue ) ) ,2 )  ELSE ROUND( 1* a.panelmeetingcriteria / a.panelwithissue ,2 )  END) END  END  AS percentcompliant,  0 history , CASE e.metrics_type  WHEN ''Percentage'' THEN CASE WHEN Nvl( b.panelwithissue , 0) = 0 THEN 0 ELSE( CASE WHEN e.ISINVERTRATE = ''Y'' THEN ROUND( 100 *( 1 -( b.panelmeetingcriteria / b.panelwithissue ) ) ,2 )  ELSE ROUND( 100* b.panelmeetingcriteria / b.panelwithissue ,2 )  END) END  WHEN ''Rate Per 1,000'' THEN CASE WHEN Nvl( b.panelwithissue , 0) = 0 THEN 0 ELSE( CASE WHEN e.ISINVERTRATE = ''Y'' THEN ROUND( 1000 *( 1 -( b.panelmeetingcriteria / b.panelwithissue ) ) ,2 )  ELSE ROUND( 1000* b.panelmeetingcriteria / b.panelwithissue ,2 )  END) END  WHEN ''Rate Per 100,000'' THEN CASE WHEN Nvl( b.panelwithissue , 0) = 0 THEN 0 ELSE( CASE WHEN e.ISINVERTRATE = ''Y'' THEN ROUND( 100000 *( 1 -( b.panelmeetingcriteria / b.panelwithissue ) ) ,2 )  ELSE ROUND( 100000* b.panelmeetingcriteria / b.panelwithissue ,2 )  END) END  WHEN ''Rate'' THEN CASE WHEN Nvl( b.panelwithissue , 0) = 0 THEN 0 ELSE( CASE WHEN e.ISINVERTRATE = ''Y'' THEN ROUND( 1 *( 1 -( b.panelmeetingcriteria / b.panelwithissue ) ) ,2 )  ELSE ROUND( 1* b.panelmeetingcriteria / b.panelwithissue ,2 )  END) END  END  AS PERCENTCOMPLIANTBOB  FROM CO_HD_MEASURES e  LEFT JOIN ( SELECT  a.MEASURE_ID,  COUNT(*) as PanelWithIssue,  SUM(CASE WHEN a.compliant_yn = ''Y'' THEN 1 ELSE 0 END) as PanelMeetingCriteria,  SUM(CASE WHEN a.compliant_yn <> ''Y'' THEN 1 ELSE 0 END) as PanelNotMeetingCriteria  FROM  CO_HD_MEMBYMEASURE  a  WHERE 1=1  AND CURFLAG = ''Y''  AND measure_type IN (:hedisSubMeasure)  AND a.nmemid NOT  IN (SELECT COHORTMEMBER.NMEMID FROM co_members COHORTMEMBER JOIN (SELECT qry.nmemid FROM (SELECT a.nmemid AS nmemid, a.memid AS memberid FROM mv_301_expensesbymem a  JOIN (   SELECT /*+ NO_MERGE(b) */        b.nmemid ,        SUM(medpaidamt) medpaidamt ,        SUM(rxpaidamt) rxpaidamt ,        SUM(totpaidamt) totpaidamt ,        NVL( SUM(billedamt) , 0 ) billedamt ,        NVL( SUM(allowedamt) , 0 ) allowedamt ,        NVL( SUM(copayamt) , 0 ) copayamt ,        NVL( SUM(coinsamt) , 0 ) coinsamt ,        NVL( SUM(deductamt) , 0 ) deductamt ,        MAX(memswitchorder) AS memswitchorder,        CASE            MAX(                CASE                            curflag WHEN ''Y''                                THEN 3 WHEN ''N''                                THEN 2 WHEN ''U''                                THEN 1                END                 ) WHEN 1             THEN ''U'' WHEN 2             THEN ''N'' WHEN 3             THEN ''Y''        END AS curflag ,        MAX(hasclm) AS hasclm,        RIGHT( MAX( relswitch ) ,1 ) relflag    FROM        co_memexpenses b  WHERE 1=1  AND b.infy=''Y''    GROUP BY        b.nmemid ) exps  ON a.nmemid = exps.nmemid  WHERE 1=1 ) qry) b on COHORTMEMBER.NMEMID=b.NMEMID WHERE 1=1  AND COHORTMEMBER.nLvl3Id = :COHORTMEMBER_nLvl3Id) GROUP BY a.MEASURE_ID) a ON a.MEASURE_ID = e.MEASURE_ID  LEFT JOIN (SELECT a.MEASURE_ID,  SUM(a.TOTMEMCOUNT) AS PANELWITHISSUE,  SUM(a.COMPLIANTMEMCOUNT) AS PANELMEETINGCRITERIA  FROM   CO_HD_SUMMARY  a  WHERE    1 = 1    AND CURFLAG = ''Y''  AND measure_type IN (:hedisSubMeasure)  GROUP BY A.MEASURE_ID) B  ON B.measure_id = E.measure_id  WHERE 1=1  AND measure_type IN (:hedisSubMeasure)  ORDER BY  UPPER(e.Domain)  ASC  ,e.Measure_id ', '[{\"colName\":\"MEASUREID\",\"colLabel\":\"#\",\"colType\":\"STRING\",\"nullPlaceHolder\":null,\"rowStart\":0,\"rowEnd\":0,\"columnStart\":0,\"columnEnd\":0,\"phiType\":null,\"alignment\":\"LEFT\",\"conditionString\":null,\"conditionFields\":null,\"minPrecision\":0,\"maxPrecision\":0,\"condtionalColumn\":null,\"condtionalColumnValue\":null,\"headerColor\":null,\"useUnderScoreLogicForId\":false,\"findAndReplaceLogicParameters\":null},{\"colName\":\"ISSUENAME\",\"colLabel\":\"Domain\",\"colType\":\"STRING\",\"nullPlaceHolder\":null,\"rowStart\":0,\"rowEnd\":0,\"columnStart\":1,\"columnEnd\":1,\"phiType\":null,\"alignment\":\"LEFT\",\"conditionString\":null,\"conditionFields\":null,\"minPrecision\":0,\"maxPrecision\":0,\"condtionalColumn\":null,\"condtionalColumnValue\":null,\"headerColor\":null,\"useUnderScoreLogicForId\":false,\"findAndReplaceLogicParameters\":null},{\"colName\":\"QUESTION\",\"colLabel\":\"Description (Flag)\",\"colType\":\"STRING\",\"nullPlaceHolder\":null,\"rowStart\":0,\"rowEnd\":0,\"columnStart\":2,\"columnEnd\":2,\"phiType\":null,\"alignment\":\"LEFT\",\"conditionString\":null,\"conditionFields\":null,\"minPrecision\":0,\"maxPrecision\":0,\"condtionalColumn\":null,\"condtionalColumnValue\":null,\"headerColor\":null,\"useUnderScoreLogicForId\":false,\"findAndReplaceLogicParameters\":null},{\"colName\":\"MEASUREMENTTYPE\",\"colLabel\":\"Measurement Type\",\"colType\":\"STRING\",\"nullPlaceHolder\":null,\"rowStart\":0,\"rowEnd\":0,\"columnStart\":3,\"columnEnd\":3,\"phiType\":null,\"alignment\":\"LEFT\",\"conditionString\":null,\"conditionFields\":null,\"minPrecision\":0,\"maxPrecision\":0,\"condtionalColumn\":null,\"condtionalColumnValue\":null,\"headerColor\":null,\"useUnderScoreLogicForId\":false,\"findAndReplaceLogicParameters\":null},{\"colName\":\"ELIGIBILITYPOPULATION\",\"colLabel\":\"Eligible Population\",\"colType\":\"INTEGER\",\"nullPlaceHolder\":null,\"rowStart\":0,\"rowEnd\":0,\"columnStart\":4,\"columnEnd\":4,\"phiType\":null,\"alignment\":\"RIGHT\",\"conditionString\":null,\"conditionFields\":null,\"minPrecision\":0,\"maxPrecision\":0,\"condtionalColumn\":null,\"condtionalColumnValue\":null,\"headerColor\":null,\"useUnderScoreLogicForId\":false,\"findAndReplaceLogicParameters\":null},{\"colName\":\"PANELMEETINGCRITERIA\",\"colLabel\":\"Flagged\",\"colType\":\"INTEGER\",\"nullPlaceHolder\":null,\"rowStart\":0,\"rowEnd\":0,\"columnStart\":5,\"columnEnd\":5,\"phiType\":null,\"alignment\":\"RIGHT\",\"conditionString\":null,\"conditionFields\":null,\"minPrecision\":0,\"maxPrecision\":0,\"condtionalColumn\":null,\"condtionalColumnValue\":null,\"headerColor\":null,\"useUnderScoreLogicForId\":false,\"findAndReplaceLogicParameters\":null},{\"colName\":\"PERCENTCOMPLIANT\",\"colLabel\":\"Flagged Rate\",\"colType\":\"FLOAT\",\"nullPlaceHolder\":null,\"rowStart\":0,\"rowEnd\":0,\"columnStart\":6,\"columnEnd\":6,\"phiType\":null,\"alignment\":\"RIGHT\",\"conditionString\":null,\"conditionFields\":null,\"minPrecision\":0,\"maxPrecision\":0,\"condtionalColumn\":null,\"condtionalColumnValue\":null,\"headerColor\":null,\"useUnderScoreLogicForId\":false,\"findAndReplaceLogicParameters\":null}]', '[\"java.util.HashMap\",{\"COHORTMEMBER_nLvl3Id\":2,\"hedisSubMeasure\":[\"java.util.ArrayList\",[\"CUSTOM\",\"STATE\"]]}]', ',', '{\"pageTitleContainer\":[{\"row\":0,\"columnIndex\":0,\"key\":\"pageTitle\",\"value\":\"Quality Measures\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null}],\"appName\":[{\"row\":1,\"columnIndex\":0,\"key\":\"Application Name\",\"value\":\"Demo Atern - Normal MI\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null}],\"cyclePeriod\":[],\"preferences\":[],\"tools\":[{\"row\":2,\"columnIndex\":0,\"key\":\"Plan Type\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":3,\"columnIndex\":0,\"key\":\"HMO\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":4,\"columnIndex\":0,\"key\":\"Company\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":5,\"columnIndex\":0,\"key\":\"Unit\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":6,\"columnIndex\":0,\"key\":\"Level Five\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":7,\"columnIndex\":0,\"key\":\"Level Six\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":8,\"columnIndex\":0,\"key\":\"Measure Type\",\"value\":\"State & Custom\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":9,\"columnIndex\":0,\"key\":\"Product Line\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":10,\"columnIndex\":0,\"key\":\"Hybrid/ Non-Hybrid\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":11,\"columnIndex\":0,\"key\":\"Domain\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":12,\"columnIndex\":0,\"key\":\"Measure Steward\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":13,\"columnIndex\":0,\"key\":\"Individuals\",\"value\":\"Current\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":14,\"columnIndex\":0,\"key\":\"Favorite HEDIS\",\"value\":\"All\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":15,\"columnIndex\":0,\"key\":\"Cohort Selection:\",\"value\":\"dfasf[Excluded]\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":16,\"columnIndex\":0,\"key\":\"Quality Measures Refresh Date\",\"value\":\"May 15, 2018\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null},{\"row\":17,\"columnIndex\":0,\"key\":\"Application Refresh Date\",\"value\":\"May 06, 2019\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null}],\"trackingData\":[],\"middleToolBar\":[{\"row\":18,\"columnIndex\":0,\"key\":\"Total Number of Records :\",\"value\":\"114\",\"colSpan\":0,\"rowSpan\":0,\"keyStyle\":null,\"valueStyle\":null}],\"data\":[],\"footerNote\":[],\"tableFooter\":[]}')"
+					}
+				]
+			}
+		]
+	}
+}
